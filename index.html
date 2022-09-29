@@ -28,24 +28,24 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="ms_header">
-      <nav class="container">
-        <div class="row">
-          <!-- Left header -->
-          <div class="col-10 col-md-4">
-            <div class="ms_brand">Start bootstrap</div>
-          </div>
-          <!-- Right header -->
-          <div class="col-2 col-md-8">
-            <!-- Hamburger menu, visible only for mobile -->
-            <div class="ms_hamburger-menu d-md-none text-end">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <!-- List menu, visible from tablet -->
-            <ul class="ms_menu-list d-none d-md-flex justify-content-end">
-              <li><a href="">Portfolio</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contacts</a></li>
+    <header class="ms_header ms_bg-secondary">
+      <nav class="navbar navbar-expand-md ">
+        <div class="container">
+          <a class="navbar-brand" href="#">Start bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
             </ul>
           </div>
         </div>

@@ -40,10 +40,26 @@ ul {
 
 /* HEADER */
 header.ms_header {
-    height: 80px;
-    line-height: 80px;
     color: white;
     background-color: var(--ms_secondary-color);
+}
+
+.ms_header .navbar-brand {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ms_header .nav-link,
+.ms_header .nav-link.active {
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.ms_header .nav-link:hover,
+.ms_header .nav-link.active:hover {
+    color: var(--ms_primary-color);
 }
 
 .ms_menu-list li {
