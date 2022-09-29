@@ -25,6 +25,35 @@ ul {
     margin: 0 auto;
 }
 
+/* Form elements */
+.form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--ms_primary-color);
+}
+
+textarea.form-control {
+    resize: none;
+    min-height: 200px;
+}
+
+/* Buttons */
+.btn.ms_btn-primary {
+    background-color: var(--ms_primary-color);
+    color: white;
+}
+
+.btn.ms_btn-primary:hover {
+    background-color: var(--ms_primary-color);
+    filter: brightness(.6);
+}
+
 /* COLORS */
 .ms_bg-primary {
     background-color: var(--ms_primary-color);
@@ -71,12 +100,39 @@ header.ms_header {
     padding: 1.5rem 0;
 }
 
+/* Star element */
+.ms_star i {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.ms_star::before,
+.ms_star::after {
+    content: "";
+    display: inline-block;
+    width: 10%;
+    height: 4px;
+    background-color: black;
+    vertical-align: middle;
+}
+
+.ms_bg-primary .ms_star i {
+    color: white;
+}
+
+.ms_bg-primary .ms_star::after,
+.ms_bg-primary .ms_star::before {
+    background-color: white;
+}
+
+/* Jumbotron */
+.ms_avatar {
+    width: 200px;
+}
+
 /* Portfolio section */
 .ms_card {
-    /* DEBUG */
-    width: 100%;
-    height: 100px;
-    background-color: blue;
+   
 }
 
 /* FOOTER */
